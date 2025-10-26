@@ -17,6 +17,7 @@ usage:
 linux:
 	make linux32
 	make linux64
+    make linux_loongarch64
 
 linux32: SConstruct
 	$(LINUX) arch=x86_32
@@ -24,6 +25,8 @@ linux32: SConstruct
 linux64: SConstruct
 	$(LINUX) arch=x86_64
 
+linux_loongarch64: SConstruct
+	$(LINUX) arch=loongarch64
 
 windows:
 	make windows32
