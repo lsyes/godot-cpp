@@ -196,7 +196,7 @@ architecture_aliases = {
     "loongarch": "loongarch64",
     "rv": "rv64",
     "riscv": "rv64",
-    "riscv64": "rv64“
+    "riscv64": "rv64",
     "ppcle": "ppc32",
     "ppc": "ppc32",
     "ppc64le": "ppc64",
