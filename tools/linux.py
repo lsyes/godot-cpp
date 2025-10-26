@@ -37,6 +37,9 @@ def generate(env):
     elif env["arch"] == "rv64":
         env.Append(CCFLAGS=["-march=rv64gc"])
         env.Append(LINKFLAGS=["-march=rv64gc"])
+    elif env["arch"] == "loongarch64":
+        env.Append(CCFLAGS=["-march=loongarch64"])
+        env.Append(LINKFLAGS=["-march=loongarch64"])    
 
     # Link statically for portability
     if env["use_static_cpp"]:
